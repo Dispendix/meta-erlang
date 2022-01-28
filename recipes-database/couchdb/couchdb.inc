@@ -19,7 +19,8 @@ SPIDERMONKEY_VERSION ?= "60"
 CONFIGUREOPTS = "--with-curl --spidermonkey-version ${SPIDERMONKEY_VERSION} --disable-docs"
 EXTRA_OECONF_remove = "--disable-static"
 
-ERL_INTERFACE_VERSION = "`pkg-config --modversion erl_ei`"
+#ERL_INTERFACE_VERSION = "`pkg-config --modversion erl_ei`"
+ERL_INTERFACE_VERSION = "3.13.2"
 export ERL_CFLAGS = "`pkg-config --cflags-only-I erl_ei` -I${STAGING_LIBDIR}/erlang/usr/include"
 export ERL_EI_LIBDIR = "${STAGING_LIBDIR}/erlang/lib/erl_interface-${ERL_INTERFACE_VERSION}/lib/"
 
