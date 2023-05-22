@@ -3,10 +3,10 @@ version: 2.1
 parameters:
   yocto-branch:
     type: string
-    default: "dunfell"
+    default: "kirkstone"
   yocto-version:
     type: string
-    default: "yocto-3.1"
+    default: "yocto-4.0"
 
 jobs:
   build:
